@@ -1,0 +1,10 @@
+server:
+  servlet:
+    context-path: /api
+spring:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/bzcodedemo
+    username: postgres
+    password: password
+
+
