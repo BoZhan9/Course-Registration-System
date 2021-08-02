@@ -26,6 +26,13 @@ public class StudentController {
         return studentService.getAllStudents();
     }
 
+    @GetMapping(path = "{studentId}")
+    public List<StudentCourse> getAllCoursesForStudent(@PathVariable("studentId") UUID studentId) {
+        // TODO
+        System.out.println(studentId);
+        return null;
+    }
+
     @PostMapping
     public void addNewStudent(@RequestBody @Valid Student student) {
         studentService.addNewStudent(student);
